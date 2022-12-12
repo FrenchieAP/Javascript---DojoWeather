@@ -1,0 +1,61 @@
+/* CSS Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}    
+
+
+
+.red {
+    color: red;
+}
+
+#navbar {
+    height: 100px;
+    background-color: rgb(142, 189, 236);
+}
+
+.cols {
+    height: 400px;
+    width: 200px;
+    background-color: rgb(227, 218, 218);
+}
+
+.color {
+    background-color: rgb(227, 218, 218);
+
+}
+
+#cookies {
+    border: solid 1px black;
+    height: 200px;
+    width: 1232px;
+    margin: 10px 0px 0px 145px;
+}
+
+#cookie {
+    margin: 25px 25px 0px 25px;
+    height: 125px;
+}
+
+#btn {
+    border: 2px solid black;
+    background-color: rgb(142, 189, 236);
+    color: ghostwhite;
+    font-weight: bold;
+    width: 350px;
+    height: 50px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    text-align: center;
+    margin: 50px 50px 0px 100px;
+}
+
+.marginleft25 {
+    margin-left: 25px;
+
+}
+
+#dw {
+    margin-left: 100px;
+}

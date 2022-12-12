@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <!-- Nav Bar -->
+    <div id="navbar" class="navbar d-flex">
+        <h1 id="dw">DojoWeather</h1>
+        <div id="navright" class="d-flex" onclick="alert('Loading weather report...')">
+            <h2> Burbank </h2>
+            <h2 class="marginleft25"> Chicago </h2>
+            <h2 class="marginleft25"> Dallas </h2>
+        </div>
+    </div>
+
+    <!-- Nav Bar 2 -->
+    <div id="navbar2" class="navbar justify-content-evenly">
+        <h1>San Jose</h1>
+        <h2>Show temperature in
+            <select onchange="changetext()" name="temp" id="temp">
+                <option>C</option>
+                <option>F</option>
+            </select>
+        </h2>
+    </div>
+
+<hr>
+<!-- Main Content -->
+<div id="main" class="d-flex justify-content-evenly">
+
+    <!-- Column 1  -->
+    <div id="col1" class="cols">
+        <h1>Today</h1>
+        <img src="some_rain.png">
+        <h3>some rain</h3>
+        <div id="temps" class="d-flex justify-content-evenly">
+            <h3 class="red" id="24">24</h3>
+            <h3 id="18">18</h3>
+        </div>
+
+    </div>
+    <!-- Column 2 -->
+    <div id="col2" class="cols">
+        <h1>Tomorrow</h1>
+        <img src="some_sun.png">
+        <h3>some sun</h3>
+        <div id="temps" class="d-flex justify-content-evenly">
+            <h3 class="red" id="27">27</h3>
+            <h3 id="19">19</h3>
+        </div>
+    </div> 
+    <!-- Column 3 -->
+    <div id="col3" class="cols">
+        <h1>Saturday</h1>
+        <img src="some_clouds.png">
+        <h3>some clouds</h3>
+        <div id="temps" class="d-flex justify-content-evenly">
+            <h3 class="red" id="21">21</h3>
+            <h3 id="16">16</h3>
+        </div> 
+    </div>
+    <!-- Column 4 -->
+    <div id="col4" class="cols">
+        <h1>Sunday</h1>
+        <img src="some_sun.png">
+        <h3>some sun</h3>
+        <div id="temps" class="d-flex justify-content-evenly">
+            <h3 class="red" id="26">26</h3>
+            <h3 id="21a">21</h3>
+        </div>
+    </div>
+</div>    
+    <!-- Cookies -->
+    <div id="cookies" class="d-flex">
+        <img src="cookie.png" id="cookie">
+        <div class="flex-column">  
+            <h2>Stop! Cookie Time</h2>
+            <h3>We use cookies to steal your information and bla bla bla who cares just click the button, you know you want to, go ahead, <a href="www.google.com">click.</a></h3>
+        </div>  
+        <button id="btn" onclick="remove()">I Accept</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
